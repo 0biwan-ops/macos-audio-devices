@@ -2,8 +2,13 @@
 const path = require('path');
 const execa = require('execa');
 const electronUtil = require('electron-util/node');
+const app = require('electron').app || electronUtil.app;
 
-const binary = path.join(electronUtil.fixPathForAsarUnpack(__dirname), 'audio-devices');
+let basePath = app.getAppPath();
+if (basePath.endsWith('app.asar')) {
+  basePath = basePath.replace('app.asar', 'app.asar.unpacked');
+}
+const binary = path.join(basePath, 'node_modules', 'macos-audio-devices', 'audio-devices');
 
 const generateExport = (name, getArgs, callback) => {
   module.exports[name] = async (...inputs) => {
