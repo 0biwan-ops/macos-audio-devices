@@ -1,4 +1,4 @@
-# macos-audio-devices [![Actions Status](https://github.com/0biwan_ops/macos-audio-devices/workflows/Node%20CI/badge.svg)](https://github.com/0biwan_ops/macos-audio-devices/actions)
+# macos-audio-devices 
 
 This is a fix for electron for the package [macos-audio-devices](https://www.npmjs.com/package/macos-audio-devices?activeTab=dependencies)
 
