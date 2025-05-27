@@ -8,7 +8,7 @@ let basePath = app.getAppPath();
 if (basePath.endsWith('app.asar')) {
   basePath = basePath.replace('app.asar', 'app.asar.unpacked');
 }
-const binary = path.join(basePath, 'node_modules', 'macos-audio-devices', 'audio-devices');
+const binary = path.join(basePath, 'node_modules', '@0biwank/macos-audio-devices', 'audio-devices');
 
 const generateExport = (name, getArgs, callback) => {
   module.exports[name] = async (...inputs) => {
