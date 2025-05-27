@@ -1,16 +1,19 @@
 {
-  "name": "@0biwan/macos-audio-devices",
+  "name": "@0biwank/macos-audio-devices",
   "version": "1.3.3",
   "description": "Get, set and configure the audio devices on macOS",
-  "repository": "https://github.com/0biwan-ops/macos-audio-devices",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0biwan-ops/macos-audio-devices.git"
+  },
   "author": {
     "name": "Kunal Dubey",
     "email": "kunal@capitalcompute.com",
     "url": "https://www.kunaldubey.tech"
   },
   "bin": {
-    "macos-audio-devices": "./audio-devices",
-    "audio-devices": "./audio-devices"
+    "macos-audio-devices": "audio-devices",
+    "audio-devices": "audio-devices"
   },
   "license": "MIT",
   "files": [
